@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <title>jBaquery | Cakes</title>
 
-<link href="css/main.css" rel="stylesheet">
-<link href="plugins/smartmenus/css/sm-core-css.css" rel="stylesheet">
-<link href="plugins/smartmenus/css/sm-mint/sm-mint.css" rel="stylesheet">
+<link href="plugins/smartmenus/css/sm-core-css.css" rel="stylesheet" type="text/css">
+<link href="plugins/smartmenus/css/sm-mint/sm-mint.css" rel="stylesheet" type="text/css">
+<link href="plugins/nanoGALLERY/css/nanogallery.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
 
-<script src="js/jquery-1.11.2.min.js"></script>
-<script src="plugins/smartmenus/jquery.smartmenus.min.js"></script>
+<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="plugins/smartmenus/jquery.smartmenus.min.js" type="text/javascript"></script>
+<script src="plugins/nanoGALLERY/jquery.nanogallery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#nanoGallery3").nanoGallery(
+			{
+				thumbnailHeight: 'auto',
+				thumbnailHoverEffect: 'scaleLabelOverImage',
+				colorScheme: 'light'
+			}
+		);
+	});
+</script>
 </head>
 <body>
 <header>
@@ -23,12 +36,22 @@
 		</ul>
 	</nav>
 </header>
-<div>
-	<section>
-		<h2>Cakes</h2>
-		<p>Here are some cakes!</p>
-	</section>
-</div>
+<section>
+	<h2>Cakes</h2>
+
+	<div id="nanoGallery3">
+		<a href="images/cakes/birthday_90_cake.jpg" data-ngthumb="images/cakes/birthday_90_cake.jpg" data-ngdesc="A birthday cake for someone who's 90 years young">90th Birthday Cake</a>
+		<a href="images/cakes/clown_cake.jpg" data-ngthumb="images/cakes/clown_cake.jpg" data-ngdesc="A kid-friendly clown cake">Clown Cake</a>
+		<a href="images/cakes/mario_cake.jpg" data-ngthumb="images/cakes/mario_cake.jpg" data-ngdesc="For the video game lover">Mario Cake</a>
+		<a href="images/cakes/peacock_cake.jpg" data-ngthumb="images/cakes/peacock_cake.jpg" data-ngdesc="A fun cake with a peacock">Peacock Cake</a>
+		<a href="images/cakes/pearl_cake.jpg" data-ngthumb="images/cakes/pearl_cake.jpg" data-ngdesc="An elegant cake with pearls">Pearl Cake</a>
+		<a href="images/cakes/pink_flower_cake.jpg" data-ngthumb="images/cakes/pink_flower_cake.jpg" data-ngdesc="A square tier cake that is pink with white flowers">Pink Flower Cake</a>
+		<a href="images/cakes/small_flower_cake.jpg" data-ngthumb="images/cakes/small_flower_cake.jpg" data-ngdesc="A small, but beautiful cake">Small Flower Cake</a>
+		<a href="images/cakes/snowflake_cake.jpg" data-ngthumb="images/cakes/snowflake_cake.jpg" data-ngdesc="A cake perfect for your holiday celebration">Snowflake Cake</a>
+		<a href="images/cakes/white_flower_cake.jpg" data-ngthumb="images/cakes/white_flower_cake.jpg" data-ngdesc="A gorgeous wedding cake">White Flower Cake</a>
+		<a href="images/cakes/yellow_cake.jpg" data-ngthumb="images/cakes/yellow_cake.jpg" data-ngdesc="A cake with alternating yellow and white flowered tiers">Yellow Cake</a>
+	</div>
+</section>
 <footer>
 	<p>Copyright 2015 Laurie Fumarolo</p>
 	<p>SITE IS FOR EDUCATIONAL PURPOSES ONLY</p>
