@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>jBaquery | Delicious baked goods</title>
+<title>jBaquery | Contact Us</title>
 
 <link href="plugins/smartmenus/css/sm-core-css.css" rel="stylesheet" type="text/css">
 <link href="plugins/smartmenus/css/sm-mint/sm-mint.css" rel="stylesheet" type="text/css">
@@ -29,20 +29,24 @@
 		</ul>
 	</nav>
 </header>
-<div>
-	<section>
-		<h2>Favorites</h2>
-		<p>Here are some favorites!</p>
-	</section>
-	<section>
-		<h2>Specials</h2>
-		<p>This is on sale!</p>
-	</section>
-	<section>
-		<h2>Events</h2>
-		<p>Here are some upcoming events!</p>
-	</section>
-</div>
+<section>
+	<h2>Contact Us</h2>
+
+	<form action="">
+		<fieldset>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required autofocus />
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required />
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" rows="20" cols="100" required></textarea>
+
+			<input type="submit" value="Submit" />
+		</fieldset>
+	</form>
+</section>
 <footer>
 	<p>Copyright 2015 Laurie Fumarolo</p>
 	<nav><a href="about_us.html">About Us</a> | <a href="contact_us.html">Contact Us</a></nav>

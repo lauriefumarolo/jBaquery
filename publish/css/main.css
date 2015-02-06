@@ -1,1 +1,34 @@
+table {
+	width: 600px;
+	text-align: left;
+}
 
+td {
+	padding: 12px;
+}
+
+.baker {
+	font-weight: bold;
+}
+
+.bakerDesc {
+	font-style: italic;
+}
+
+form {
+	margin-bottom: 30px;
+}
+
+fieldset {
+	width: 600px;
+	padding: 20px;
+}
+
+label, input[type="submit"] {
+	display: block;
+	margin-top: 20px;
+}
+
+textarea {
+	resize: none;
+}
