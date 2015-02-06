@@ -1,3 +1,12 @@
+.fade {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.fade img {
+	margin: auto;
+}
+
 table {
 	width: 600px;
 	text-align: left;
