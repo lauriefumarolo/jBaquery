@@ -7,19 +7,4 @@ $(document).ready(function() {
 			$ul.slideUp(250, complete);
 		}
 	});
-
-	$('.fade').slick({
-		dots: true,
-		infinite: true,
-		speed: 700,
-		fade: true,
-		cssEase: 'linear',
-		autoplay: true
-	});
-
-	$("#nanoGallery3").nanoGallery({
-		thumbnailHeight: 'auto',
-		thumbnailHoverEffect: 'scaleLabelOverImage',
-		colorScheme: 'light'
-	});
 });
