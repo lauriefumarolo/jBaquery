@@ -1,3 +1,36 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+.mainDiv {
+	background: #0769AD;
+	border-top: 1px solid #7ACEF4;
+	border-bottom: 1px solid #7ACEF4;
+}
+
+.logo {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.contentDiv {
+	background: white;
+	width: 93%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	padding: 5px 15px 5px 15px;
+	border: 1px solid #04436F;
+	border-radius: 12px;
+	box-shadow: 2px 0px 3px #055389;
+}
+
+h2 {
+	background: #EEE;
+	padding: 10px 10px 9px 10px;
+}
+
 .fade {
 	margin-top: 50px;
 	margin-bottom: 50px;
