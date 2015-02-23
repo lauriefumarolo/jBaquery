@@ -105,18 +105,33 @@ td {
 	font-style: italic;
 }
 
-form {
-	margin-bottom: 30px;
+#contactInfo {
+	width: 400px;
+	height: 525px;
+	float: left;
+}
+
+#map-canvas {
+	width: 350px;
+	height: 250px;
+	background-color: #CCC;
+}
+
+#contactUs {
+	height: 525px;
 }
 
 fieldset {
-	width: 600px;
-	padding: 20px;
+	padding: 20px 25px 20px 20px;
 }
 
-label, input[type="submit"] {
+label:not([for="name"]), input[type="submit"] {
 	display: block;
 	margin-top: 20px;
+}
+
+input:not([type="submit"]), textarea {
+	width: 100%;
 }
 
 textarea {
