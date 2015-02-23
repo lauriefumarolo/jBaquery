@@ -4,6 +4,19 @@ html, body {
 	font-family: 'PT Sans', sans-serif;
 }
 
+a:link, a:visited {
+	color: #B24926;
+}
+
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+a::selection {
+	background: #B3D4FC;
+}
+
 #mainNav {
 	height: 34px;
 	padding: 0 20px;
@@ -162,8 +175,4 @@ footer a:link, footer a:visited {
 
 footer a:hover {
 	color: white;
-}
-
-footer a::selection {
-	background: #B3D4FC;
 }
