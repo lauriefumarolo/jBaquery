@@ -120,7 +120,7 @@ td {
 
 #contactInfo {
 	width: 400px;
-	height: 525px;
+	height: 550px;
 	float: left;
 }
 
@@ -131,7 +131,7 @@ td {
 }
 
 #contactUs {
-	height: 525px;
+	height: 550px;
 }
 
 fieldset {
@@ -175,4 +175,20 @@ footer a:link, footer a:visited {
 
 footer a:hover {
 	color: white;
+}
+
+@media (max-width: 855px) {
+	#contactInfo {
+		height: auto;
+		float: none;
+	}
+
+	h4 {
+		background: #D6D6D6;
+		padding: 10px 10px 9px 10px;
+	}
+
+	#contactUs {
+		height: 568px;
+	}
 }
