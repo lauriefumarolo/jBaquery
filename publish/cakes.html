@@ -5,10 +5,12 @@
 <title>jBaquery | Cakes</title>
 
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+<link href="plugins/sidr/jquery.sidr.dark.css" rel="stylesheet" type="text/css">
 <link href="plugins/nanoGALLERY/css/nanogallery.min.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
 
 <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="plugins/sidr/jquery.sidr.min.js" type="text/javascript"></script>
 <script src="plugins/nanoGALLERY/jquery.nanogallery.min.js" type="text/javascript"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -23,16 +25,21 @@
 </head>
 <body>
 <header>
-	<nav id="mainNav">
-		<ul>
-			<li><a href="cakes.html">Cakes</a></li>
-			<li><a href="cupcakes.html">Cupcakes</a></li>
-			<li><a href="cookies.html">Cookies</a></li>
-			<li><a href="pies.html">Pies</a></li>
-			<li><a href="pastries.html">Pastries</a></li>
-			<li><a href="breads.html">Breads</a></li>
-		</ul>
-	</nav>
+	<div id="mobile-header">
+		<a id="responsive-menu-button" href="#sidr">&#9776;</a>
+	</div>
+	<div id="mainNav">
+		<nav>
+			<ul>
+				<li><a href="cakes.html">Cakes</a></li>
+				<li><a href="cupcakes.html">Cupcakes</a></li>
+				<li><a href="cookies.html">Cookies</a></li>
+				<li><a href="pies.html">Pies</a></li>
+				<li><a href="pastries.html">Pastries</a></li>
+				<li><a href="breads.html">Breads</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>
 <div class="mainDiv">
 	<a href="index.html"><img class="logo" src="images/jBaqueryLogo.png" alt="jBaquery Logo" /></a>
