@@ -8,21 +8,28 @@
 <link href="plugins/sidr/jquery.sidr.dark.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<![endif]-->
 <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 <script src="plugins/sidr/jquery.sidr.min.js" type="text/javascript"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
+		// helper function that initializes Google map of bakery location
 		function initializeMap() {
+			// get map point with latitude and longitude
 			var mapPoint = new google.maps.LatLng(41.8838972, -87.628465);
 
+			// create map and show in #map-canvas
 			var map = new google.maps.Map(document.getElementById('map-canvas'), {
 				center: mapPoint,
 				zoom: 17,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			});
 
+			// create marker that shows bakery address
 			var marker = new google.maps.Marker({
 				position: mapPoint,
 				map: map,
@@ -30,15 +37,20 @@
 			});
 		}
 
+		// initialize map
 		google.maps.event.addDomListener(window, 'load', initializeMap);
-	});
+	}); // end document.ready()
 </script>
 </head>
 <body>
 <header>
+	<!-- Site navigation for when screen is mobile-size -->
+	<!-- A hamburger button shows a right side drawer with menu items when selected -->
 	<div id="mobile-header">
 		<a id="responsive-menu-button" href="#sidr">&#9776;</a>
 	</div>
+
+	<!-- Regular site navigation -->
 	<div id="mainNav">
 		<nav>
 			<ul>
@@ -53,24 +65,33 @@
 	</div>
 </header>
 <div class="mainDiv">
+	<!-- Site logo -->
 	<a href="index.html"><img class="logo" src="images/jBaqueryLogo.png" alt="jBaquery Logo" /></a>
 	<div class="contentDiv">
 		<section>
 			<h2>Contact Us</h2>
 
+			<!-- Contact information for the bakery such as address, phone, and hours -->
+			<!-- When screen is mobile-size, this section is above the contact us form -->
+			<!-- Otherwise, the two divs are side-by-side -->
 			<div id="contactInfo">
+				<!-- Google map of bakery location -->
 				<div id="map-canvas"></div>
 				<p translate="no">
 					108 N State St<br>
 					Chicago, <abbr title="Illinois">IL</abbr> 60602 USA
 				</p>
-				<p><a href="tel:+13121234567">(312) 123-4567</a></p>
+				<p><a href="tel:+15550123456">(555) 012-3456</a></p>
 				<p>
 					Hours: M-Thu: 7:30 AM to 9 PM<br>
 					F: 7:30 AM to 11 PM<br>
 					Sat-Sun: 8 AM to 11 PM<br>
 				</p>
 			</div>
+
+			<!-- Contact us form -->
+			<!-- When screen is mobile-size, this section is below the contact information div -->
+			<!-- Otherwise, the two divs are side-by-side -->
 			<div id="contactUs">
 				<h4>Please send us your questions and comments!</h4>
 				<form action="#">

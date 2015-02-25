@@ -9,6 +9,9 @@
 <link href="plugins/nanoGALLERY/css/nanogallery.min.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<![endif]-->
 <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 <script src="plugins/sidr/jquery.sidr.min.js" type="text/javascript"></script>
 <script src="plugins/nanoGALLERY/jquery.nanogallery.min.js" type="text/javascript"></script>
@@ -17,9 +20,13 @@
 </head>
 <body>
 <header>
+	<!-- Site navigation for when screen is mobile-size -->
+	<!-- A hamburger button shows a right side drawer with menu items when selected -->
 	<div id="mobile-header">
 		<a id="responsive-menu-button" href="#sidr">&#9776;</a>
 	</div>
+
+	<!-- Regular site navigation -->
 	<div id="mainNav">
 		<nav>
 			<ul>
@@ -34,11 +41,13 @@
 	</div>
 </header>
 <div class="mainDiv">
+	<!-- Site logo -->
 	<a href="index.html"><img class="logo" src="images/jBaqueryLogo.png" alt="jBaquery Logo" /></a>
 	<div class="contentDiv">
 		<section>
 			<h2>Cakes</h2>
 
+			<!-- Cake image gallery -->
 			<div id="nanoGallery">
 				<a href="images/cakes/birthday_90_cake.jpg" data-ngthumb="images/cakes/birthday_90_cake.jpg" data-ngdesc="A birthday cake for someone who's 90 years young">90th Birthday Cake</a>
 				<a href="images/cakes/clown_cake.jpg" data-ngthumb="images/cakes/clown_cake.jpg" data-ngdesc="A kid-friendly clown cake">Clown Cake</a>
