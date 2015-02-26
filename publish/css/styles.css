@@ -211,6 +211,26 @@ textarea {
 	resize: none;
 }
 
+/* Image Attribution page styles */
+
+#imageAttributionList {
+	padding-left: 30px;
+}
+
+#imageAttributionList li {
+	list-style: none;
+}
+
+/* li discs mimic jQuery.com */
+#imageAttributionList li:before {
+	position: relative;
+	padding-right: .25em;
+	top: .1em;
+	font-size: 1.2em;
+	content: '\2022'; /* /2022 is the numerical unicode for &bull; */
+	color: #C6C6C6; /* Gray */
+}
+
 /* Footer styles */
 
 footer {
