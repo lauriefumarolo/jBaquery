@@ -211,6 +211,11 @@ textarea {
 	resize: none;
 }
 
+input[type="submit"] {
+	padding: 5px 10px;
+	font-size: 14px;
+}
+
 /* Image Attribution page styles */
 
 #imageAttributionList {
