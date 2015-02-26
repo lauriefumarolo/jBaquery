@@ -125,7 +125,23 @@ h2 {
 }
 
 .fade img {
+	position: relative;
 	margin: auto;
+}
+
+/* Text overlay */
+.fade h2 {
+	position: absolute;
+	width: 700px;
+	margin: auto;
+	padding-left: 0;
+	padding-right: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: white;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
 }
 
 #mobile-content {
