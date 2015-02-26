@@ -150,16 +150,25 @@ h2 {
 
 /* About Us page styles */
 
-table {
-	width: 600px;
-	text-align: left;
+.bakerTable {
+	display: table;
 }
 
-td {
-	padding: 12px;
+.bakerRow {
+	display: table-row;
 }
 
-.baker {
+.bakerCell {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 30px 20px;
+}
+
+.vertical {
+	padding-left: 45px;
+}
+
+.bakerName {
 	font-weight: bold;
 }
 
@@ -254,6 +263,27 @@ footer a:hover {
 		display: block;
 	}
 
+	/* About Us page */
+	/* Baker image div should be on top of baker name/description div instead of side-by-side */
+
+	.bakerTable {
+		display: block;
+	}
+
+	.bakerRow {
+		display: block;
+	}
+
+	.bakerCell {
+		display: block;
+		padding: 0;
+	}
+
+	.vertical {
+		padding-left: 0;
+	}
+
+	/* Contact Us page */
 	/* Contact information div should be on top of Contact Us form instead of side-by-side */
 
 	#contactInfo {
