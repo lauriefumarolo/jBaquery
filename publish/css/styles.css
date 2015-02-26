@@ -216,6 +216,11 @@ input[type="submit"] {
 	font-size: 14px;
 }
 
+/* Set z-index of jQuery UI dialog higher than #contentDiv */
+.ui-dialog {
+	z-index: 1000 !important;
+}
+
 /* Image Attribution page styles */
 
 #imageAttributionList {
