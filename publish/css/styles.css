@@ -128,6 +128,10 @@ h2 {
 	margin: auto;
 }
 
+#mobile-content {
+	display: none;
+}
+
 /* About Us page styles */
 
 table {
@@ -222,6 +226,16 @@ footer a:hover {
 	/* Hide regular site navigation */
 	#mainNav {
 		display: none;
+	}
+
+	/* On home page, hide the carousel and show each image and description in their own separate section */
+
+	.fade {
+		display: none;
+	}
+
+	#mobile-content {
+		display: block;
 	}
 
 	/* Contact information div should be on top of Contact Us form instead of side-by-side */
