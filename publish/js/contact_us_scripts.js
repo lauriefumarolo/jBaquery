@@ -45,10 +45,9 @@ $(document).ready(function() {
 				required: "Please write a message."
 			}
 		},
+		// called if form data is valid
 		submitHandler: function(form) {
-			form.submit();
-
-			// if our form data is valid, show user a thank you dialog
+			// show user a thank you dialog
 			$('#dialog').dialog('open');
 
 			// clear all form fields
