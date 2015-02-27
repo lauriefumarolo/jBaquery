@@ -16,17 +16,47 @@ $(document).ready(function() {
 		}
 	}); // end setup for jQuery UI dialog
 
-	// when user submits form, show a thank you dialog
-	// also, clear all form fields
-	$('form').submit(function() {
-		$('#dialog').dialog('open');
+	// setup for jquery validation plugin
+	$('form').validate({
+		// rules - name, email, and message fields are required
+		// email should be a valid email address
+		rules: {
+			name : {
+				required: true
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			message: {
+				required: true
+			}
+		},
+		// error messages
+		messages: {
+			name: {
+				required: "Please give your name."
+			},
+			email: {
+				required: "Please supply your email address.",
+				email: "This is not a valid email address."
+			},
+			message: {
+				required: "Please write a message."
+			}
+		},
+		submitHandler: function(form) {
+			form.submit();
 
-		// have to clear form fields manually or dialog disappears
-		$('input:not([type="submit"])').val('');
-		$('textarea').val('');
+			// if our form data is valid, show user a thank you dialog
+			$('#dialog').dialog('open');
 
-		return false;
-	}); // end form submit
+			// clear all form fields
+			form.reset();
+
+			return false;
+		}
+	}); // end setup for jquery validation plugin
 
 	// helper function that initializes Google map of bakery location
 	function initializeMap() {

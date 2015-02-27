@@ -103,6 +103,7 @@ a::selection {
 	z-index: 999;
 	position: relative;
 	padding: 5px 15px 5px 15px;
+	clear: both;
 	background: white;
 	/* Shadows around left, top, and right mimic jQuery.com */
 	border-top: 1px solid rgba(250, 250, 250, 0.27);
@@ -179,9 +180,8 @@ h2 {
 /* Contact Us page styles */
 
 #contactInfo {
-	width: 400px;
-	height: 550px;
 	float: left;
+	margin-right: 30px;
 }
 
 #map-canvas {
@@ -190,17 +190,13 @@ h2 {
 	background-color: #CCC; /* Gray */
 }
 
-#contactUs {
-	height: 550px;
-}
-
 fieldset {
 	padding: 20px 25px 20px 20px;
+	margin-bottom: 20px;
 }
 
-label:not([for="name"]), input[type="submit"] {
-	display: block;
-	margin-top: 20px;
+.field {
+	margin-bottom: 20px;
 }
 
 input:not([type="submit"]), textarea {
@@ -212,8 +208,21 @@ textarea {
 }
 
 input[type="submit"] {
+	display: block;
 	padding: 5px 10px;
 	font-size: 14px;
+}
+
+/* Form error message styles */
+
+form label.error {
+	color: #F00; /* Red */
+	font-weight: bold;
+}
+
+form input.error, form textarea.error {
+	background: #FFA9B8; /* Light red */
+	border: 1px solid red;
 }
 
 /* Set z-index of jQuery UI dialog higher than #contentDiv */
@@ -317,7 +326,6 @@ footer a:hover {
 	/* Contact information div should be on top of Contact Us form instead of side-by-side */
 
 	#contactInfo {
-		height: auto;
 		float: none;
 	}
 
@@ -325,9 +333,5 @@ footer a:hover {
 	h4 {
 		background: #D6D6D6; /* Light gray */
 		padding: 10px 10px 9px 10px;
-	}
-
-	#contactUs {
-		height: 568px;
 	}
 }
