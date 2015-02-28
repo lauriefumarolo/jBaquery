@@ -230,18 +230,19 @@ form input.error, form textarea.error {
 	z-index: 1000 !important;
 }
 
-/* Image Attribution page styles */
+/* Acknowledgements page styles */
 
-#imageAttributionList {
+.acknowledgementList {
 	padding-left: 30px;
+	padding-right: 30px;
 }
 
-#imageAttributionList li {
+.acknowledgementList li {
 	list-style: none;
 }
 
 /* li discs mimic jQuery.com */
-#imageAttributionList li:before {
+.acknowledgementList li:before {
 	position: relative;
 	padding-right: .25em;
 	top: .1em;
