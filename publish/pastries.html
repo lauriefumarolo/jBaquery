@@ -28,7 +28,7 @@
 
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
 <link href="plugins/sidr/jquery.sidr.dark.css" rel="stylesheet" type="text/css">
-<link href="plugins/nanoGALLERY/css/nanogallery.min.css" rel="stylesheet" type="text/css">
+<link href="plugins/blueimp_gallery/blueimp-gallery.min.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
 <!--[if lt IE 9]>
@@ -36,9 +36,9 @@
 <![endif]-->
 <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 <script src="plugins/sidr/jquery.sidr.min.js" type="text/javascript"></script>
-<script src="plugins/nanoGALLERY/jquery.nanogallery.min.js" type="text/javascript"></script>
+<script src="plugins/blueimp_gallery/blueimp-gallery.min.js" type="text/javascript"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
-<script src="js/nano_gallery_scripts.js" type="text/javascript"></script>
+<script src="js/blueimp_gallery_scripts.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
@@ -69,18 +69,49 @@
 		<section>
 			<h2>Pastries</h2>
 
+			<!-- blueimp gallery image controls -->
+			<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+				<div class="slides"></div>
+				<h3 class="title"></h3>
+				<a class="prev">‹</a>
+				<a class="next">›</a>
+				<a class="close">×</a>
+				<a class="play-pause"></a>
+				<ol class="indicator"></ol>
+			</div>
+
 			<!-- Pastry image gallery -->
-			<div id="nanoGallery">
-				<a href="images/pastries/bear_claw_pastries.jpg" data-ngthumb="images/pastries/bear_claw_pastries.jpg" data-ngdesc="Sticky pastries filled with cinnamon and topped with almonds">Bear Claws</a>
-				<a href="images/pastries/berry_cream_puff_pastries.jpg" data-ngthumb="images/pastries/berry_cream_puff_pastries.jpg" data-ngdesc="Cream puffs topped with fresh raspberries">Berry Cream Puffs</a>
-				<a href="images/pastries/cannoli_pastries.jpg" data-ngthumb="images/pastries/cannoli_pastries.jpg" data-ngdesc="Fresh vanilla or chocolate cannolis filled with ricotta cheese">Cannolis</a>
-				<a href="images/pastries/chocolate_doughnut_pastries.jpg" data-ngthumb="images/pastries/chocolate_doughnut_pastries.jpg" data-ngdesc="Cake doughnuts topped with chocolate">Chocolate Doughnuts</a>
-				<a href="images/pastries/cream_puff_pastries.jpg" data-ngthumb="images/pastries/cream_puff_pastries.jpg" data-ngdesc="Classic pastries topped with fresh cream">Cream Puffs</a>
-				<a href="images/pastries/croissant_pastries.jpg" data-ngthumb="images/pastries/croissant_pastries.jpg" data-ngdesc="Made fresh daily">Croissants</a>
-				<a href="images/pastries/doughnut_pastries.jpg" data-ngthumb="images/pastries/doughnut_pastries.jpg" data-ngdesc="Glazed cake doughnuts">Doughnuts</a>
-				<a href="images/pastries/fruit_pastries.jpg" data-ngthumb="images/pastries/fruit_pastries.jpg" data-ngdesc="Small pastries filled with cream cheese and topped with fresh fruit">Fruit Pastries</a>
-				<a href="images/pastries/peanut_butter_doughnut_pastries.jpg" data-ngthumb="images/pastries/peanut_butter_doughnut_pastries.jpg" data-ngdesc="Cake doughnuts filled and topped with peanut butter">Peanut Butter Doughnuts</a>
-				<a href="images/pastries/vanilla_whitechocolate_coffee_pastries.jpg" data-ngthumb="images/pastries/vanilla_whitechocolate_coffee_pastries.jpg" data-ngdesc="Pastries filled with vanilla bean and coffee custard and topped with white chocolate">Vanilla White Chocolate Coffee Pastries</a>
+			<div id="links">
+				<a href="images/pastries/bear_claw_pastries.jpg" title="Bear Claws">
+					<img src="images/pastries/bear_claw_pastries.jpg" alt="Bear Claws">
+				</a>
+				<a href="images/pastries/berry_cream_puff_pastries.jpg" title="Berry Cream Puffs">
+					<img src="images/pastries/berry_cream_puff_pastries.jpg" alt="Berry Cream Puffs">
+				</a>
+				<a href="images/pastries/cannoli_pastries.jpg" title="Cannolis">
+					<img src="images/pastries/cannoli_pastries.jpg" alt="Cannolis">
+				</a>
+				<a href="images/pastries/chocolate_doughnut_pastries.jpg" title="Chocolate Doughnuts">
+					<img src="images/pastries/chocolate_doughnut_pastries.jpg" alt="Chocolate Doughnuts">
+				</a>
+				<a href="images/pastries/cream_puff_pastries.jpg" title="Cream Puffs">
+					<img src="images/pastries/cream_puff_pastries.jpg" alt="Cream Puffs">
+				</a>
+				<a href="images/pastries/croissant_pastries.jpg" title="Croissants">
+					<img src="images/pastries/croissant_pastries.jpg" alt="Croissants">
+				</a>
+				<a href="images/pastries/doughnut_pastries.jpg" title="Doughnuts">
+					<img src="images/pastries/doughnut_pastries.jpg" alt="Doughnuts">
+				</a>
+				<a href="images/pastries/fruit_pastries.jpg" title="Fruit Pastries">
+					<img src="images/pastries/fruit_pastries.jpg" alt="Fruit Pastries">
+				</a>
+				<a href="images/pastries/peanut_butter_doughnut_pastries.jpg" title="Peanut Butter Doughnuts">
+					<img src="images/pastries/peanut_butter_doughnut_pastries.jpg" alt="Peanut Butter Doughnuts">
+				</a>
+				<a href="images/pastries/vanilla_whitechocolate_coffee_pastries.jpg" title="Vanilla White Chocolate Coffee Pastries">
+					<img src="images/pastries/vanilla_whitechocolate_coffee_pastries.jpg" alt="Vanilla White Chocolate Coffee Pastries">
+				</a>
 			</div>
 		</section>
 	</div>

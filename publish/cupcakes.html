@@ -28,7 +28,7 @@
 
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
 <link href="plugins/sidr/jquery.sidr.dark.css" rel="stylesheet" type="text/css">
-<link href="plugins/nanoGALLERY/css/nanogallery.min.css" rel="stylesheet" type="text/css">
+<link href="plugins/blueimp_gallery/blueimp-gallery.min.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
 <!--[if lt IE 9]>
@@ -36,9 +36,9 @@
 <![endif]-->
 <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 <script src="plugins/sidr/jquery.sidr.min.js" type="text/javascript"></script>
-<script src="plugins/nanoGALLERY/jquery.nanogallery.min.js" type="text/javascript"></script>
+<script src="plugins/blueimp_gallery/blueimp-gallery.min.js" type="text/javascript"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
-<script src="js/nano_gallery_scripts.js" type="text/javascript"></script>
+<script src="js/blueimp_gallery_scripts.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
@@ -69,18 +69,49 @@
 		<section>
 			<h2>Cupcakes</h2>
 
+			<!-- blueimp gallery image controls -->
+			<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+				<div class="slides"></div>
+				<h3 class="title"></h3>
+				<a class="prev">‹</a>
+				<a class="next">›</a>
+				<a class="close">×</a>
+				<a class="play-pause"></a>
+				<ol class="indicator"></ol>
+			</div>
+
 			<!-- Cupcake image gallery -->
-			<div id="nanoGallery">
-				<a href="images/cupcakes/blue_cupcakes.jpg" data-ngthumb="images/cupcakes/blue_cupcakes.jpg" data-ngdesc="Chocolate cupcakes with blue icing">Blue Cupcakes</a>
-				<a href="images/cupcakes/chocolate_cupcakes.jpg" data-ngthumb="images/cupcakes/chocolate_cupcakes.jpg" data-ngdesc="An assortment of rich, fudgy cupcakes">Chocolate Cupcakes</a>
-				<a href="images/cupcakes/halloween_cupcakes.jpg" data-ngthumb="images/cupcakes/halloween_cupcakes.jpg" data-ngdesc="Spooky cupcakes for your trick-or-treaters">Halloween Cupcakes</a>
-				<a href="images/cupcakes/ice_cream_cone_cupcakes.jpg" data-ngthumb="images/cupcakes/ice_cream_cone_cupcakes.jpg" data-ngdesc="Vanilla cupcakes baked in ice cream cones and topped with chocolate icing">Ice Cream Cone Cupcakes</a>
-				<a href="images/cupcakes/mint_cupcakes.jpg" data-ngthumb="images/cupcakes/mint_cupcakes.jpg" data-ngdesc="Cool chocolate mint cupcakes">Mint Cupcakes</a>
-				<a href="images/cupcakes/neon_cupcakes.jpg" data-ngthumb="images/cupcakes/neon_cupcakes.jpg" data-ngdesc="These bright cupcakes glow under a black light">Neon Cupcakes</a>
-				<a href="images/cupcakes/st_patricks_day_cupcakes.jpg" data-ngthumb="images/cupcakes/st_patricks_day_cupcakes.jpg" data-ngdesc="Can be made with or without Irish cream">St. Patrick's Day Cupcakes</a>
-				<a href="images/cupcakes/strawberry_cupcakes.jpg" data-ngthumb="images/cupcakes/strawberry_cupcakes.jpg" data-ngdesc="Topped with fresh fruit and whipped cream">Strawberry Cupcakes</a>
-				<a href="images/cupcakes/white_rose_cupcakes.jpg" data-ngthumb="images/cupcakes/white_rose_cupcakes.jpg" data-ngdesc="Perfect for a bridal shower">White Rose Cupcakes</a>
-				<a href="images/cupcakes/yellow_cupcakes.jpg" data-ngthumb="images/cupcakes/yellow_cupcakes.jpg" data-ngdesc="Lemon cupcakes with lemon icing">Yellow Cupcakes</a>
+			<div id="links">
+				<a href="images/cupcakes/blue_cupcakes.jpg" title="Blue Cupcakes">
+					<img src="images/cupcakes/blue_cupcakes.jpg" alt="Blue Cupcakes">
+				</a>
+				<a href="images/cupcakes/chocolate_cupcakes.jpg" title="Chocolate Cupcakes">
+					<img src="images/cupcakes/chocolate_cupcakes.jpg" alt="Chocolate Cupcakes">
+				</a>
+				<a href="images/cupcakes/halloween_cupcakes.jpg" title="Halloween Cupcakes">
+					<img src="images/cupcakes/halloween_cupcakes.jpg" alt="Halloween Cupcakes">
+				</a>
+				<a href="images/cupcakes/ice_cream_cone_cupcakes.jpg" title="Ice Cream Cone Cupcakes">
+					<img src="images/cupcakes/ice_cream_cone_cupcakes.jpg" alt="Ice Cream Cone Cupcakes">
+				</a>
+				<a href="images/cupcakes/mint_cupcakes.jpg" title="Mint Cupcakes">
+					<img src="images/cupcakes/mint_cupcakes.jpg" alt="Mint Cupcakes">
+				</a>
+				<a href="images/cupcakes/neon_cupcakes.jpg" title="Neon Cupcakes">
+					<img src="images/cupcakes/neon_cupcakes.jpg" alt="Neon Cupcakes">
+				</a>
+				<a href="images/cupcakes/st_patricks_day_cupcakes.jpg" title="St. Patrick's Day Cupcakes">
+					<img src="images/cupcakes/st_patricks_day_cupcakes.jpg" alt="St. Patrick's Day Cupcakes">
+				</a>
+				<a href="images/cupcakes/strawberry_cupcakes.jpg" title="Strawberry Cupcakes">
+					<img src="images/cupcakes/strawberry_cupcakes.jpg" alt="Strawberry Cupcakes">
+				</a>
+				<a href="images/cupcakes/white_rose_cupcakes.jpg" title="White Rose Cupcakes">
+					<img src="images/cupcakes/white_rose_cupcakes.jpg" alt="White Rose Cupcakes">
+				</a>
+				<a href="images/cupcakes/yellow_cupcakes.jpg" title="Yellow Cupcakes">
+					<img src="images/cupcakes/yellow_cupcakes.jpg" alt="Yellow Cupcakes">
+				</a>
 			</div>
 		</section>
 	</div>

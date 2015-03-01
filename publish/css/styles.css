@@ -149,6 +149,20 @@ h2 {
 	display: none;
 }
 
+/* Image gallery styles */
+
+#links {
+	text-align: center;
+}
+
+#links a {
+	text-decoration: none;
+}
+
+#links a img {
+	height: 300px;
+}
+
 /* About Us page styles */
 
 .bakerTable {
@@ -302,6 +316,11 @@ only screen and (max-device-width: 1024px) {
 
 	#mobile-content {
 		display: block;
+	}
+
+	/* For image galleries, make images smaller */
+	#links a img {
+		height: 225px;
 	}
 
 	/* About Us page */

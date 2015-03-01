@@ -28,7 +28,7 @@
 
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
 <link href="plugins/sidr/jquery.sidr.dark.css" rel="stylesheet" type="text/css">
-<link href="plugins/nanoGALLERY/css/nanogallery.min.css" rel="stylesheet" type="text/css">
+<link href="plugins/blueimp_gallery/blueimp-gallery.min.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
 <!--[if lt IE 9]>
@@ -36,9 +36,9 @@
 <![endif]-->
 <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 <script src="plugins/sidr/jquery.sidr.min.js" type="text/javascript"></script>
-<script src="plugins/nanoGALLERY/jquery.nanogallery.min.js" type="text/javascript"></script>
+<script src="plugins/blueimp_gallery/blueimp-gallery.min.js" type="text/javascript"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
-<script src="js/nano_gallery_scripts.js" type="text/javascript"></script>
+<script src="js/blueimp_gallery_scripts.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
@@ -69,18 +69,48 @@
 		<section>
 			<h2>Breads</h2>
 
+			<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+				<div class="slides"></div>
+				<h3 class="title"></h3>
+				<a class="prev">‹</a>
+				<a class="next">›</a>
+				<a class="close">×</a>
+				<a class="play-pause"></a>
+				<ol class="indicator"></ol>
+			</div>
+
 			<!-- Bread image gallery -->
-			<div id="nanoGallery">
-				<a href="images/breads/bacon_cinnamon_rolls_bread.jpg" data-ngthumb="images/breads/bacon_cinnamon_rolls_bread.jpg" data-ngdesc="Sticky cinnamon rolls topped with crispy bacon">Bacon Cinnamon Rolls</a>
-				<a href="images/breads/bagels_bread.jpg" data-ngthumb="images/breads/bagels_bread.jpg" data-ngdesc="An assortment of bagels">Bagels</a>
-				<a href="images/breads/focaccia_bread.jpg" data-ngthumb="images/breads/focaccia_bread.jpg" data-ngdesc="Warm, herb focaccia bread">Focaccia Bread</a>
-				<a href="images/breads/french_bread.jpg" data-ngthumb="images/breads/french_bread.jpg" data-ngdesc="Warm french loaves">French Bread</a>
-				<a href="images/breads/pita_bread.jpg" data-ngthumb="images/breads/pita_bread.jpg" data-ngdesc="Whole grain pita rounds">Pita Bread</a>
-				<a href="images/breads/pumpkin_spice_bread.jpg" data-ngthumb="images/breads/pumpkin_spice_bread.jpg" data-ngdesc="A sweet pumpkin bread made with cinnamon, nutmeg, and cloves">Pumpkin Spice Bread</a>
-				<a href="images/breads/rolls_bread.jpg" data-ngthumb="images/breads/rolls_bread.jpg" data-ngdesc="Made fresh daily">Dinner Rolls</a>
-				<a href="images/breads/rye_bread.jpg" data-ngthumb="images/breads/rye_bread.jpg" data-ngdesc="Whole grain rye loaves">Rye Bread</a>
-				<a href="images/breads/sesame_breadsticks_bread.jpg" data-ngthumb="images/breads/sesame_breadsticks_bread.jpg" data-ngdesc="Crispy breadsticks topped with sesame seeds">Sesame Breadsticks</a>
-				<a href="images/breads/whole_grain_bread.jpg" data-ngthumb="images/breads/whole_grain_bread.jpg" data-ngdesc="Bread made with 5 different whole grains">Whole Grain Bread</a>
+			<div id="links">
+				<a href="images/breads/bacon_cinnamon_rolls_bread.jpg" title="Bacon Cinnamon Rolls">
+					<img src="images/breads/bacon_cinnamon_rolls_bread.jpg" alt="Bacon Cinnamon Rolls">
+				</a>
+				<a href="images/breads/bagels_bread.jpg" title="Bagels">
+					<img src="images/breads/bagels_bread.jpg" alt="Bagels">
+				</a>
+				<a href="images/breads/focaccia_bread.jpg" title="Focaccia Bread">
+					<img src="images/breads/focaccia_bread.jpg" alt="Focaccia Bread">
+				</a>
+				<a href="images/breads/french_bread.jpg" title="French Bread">
+					<img src="images/breads/french_bread.jpg" alt="French Bread">
+				</a>
+				<a href="images/breads/pita_bread.jpg" title="Pita Bread">
+					<img src="images/breads/pita_bread.jpg" alt="Pita Bread">
+				</a>
+				<a href="images/breads/pumpkin_spice_bread.jpg" title="Pumpkin Spice Bread">
+					<img src="images/breads/pumpkin_spice_bread.jpg" alt="Pumpkin Spice Bread">
+				</a>
+				<a href="images/breads/rolls_bread.jpg" title="Dinner Rolls">
+					<img src="images/breads/rolls_bread.jpg" alt="Dinner Rolls">
+				</a>
+				<a href="images/breads/rye_bread.jpg" title="Rye Bread">
+					<img src="images/breads/rye_bread.jpg" alt="Rye Bread">
+				</a>
+				<a href="images/breads/sesame_breadsticks_bread.jpg" title="Sesame Breadsticks">
+					<img src="images/breads/sesame_breadsticks_bread.jpg" alt="Sesame Breadsticks">
+				</a>
+				<a href="images/breads/whole_grain_bread.jpg" title="Whole Grain Bread">
+					<img src="images/breads/whole_grain_bread.jpg" alt="Whole Grain Bread">
+				</a>
 			</div>
 		</section>
 	</div>

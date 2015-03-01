@@ -28,7 +28,7 @@
 
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
 <link href="plugins/sidr/jquery.sidr.dark.css" rel="stylesheet" type="text/css">
-<link href="plugins/nanoGALLERY/css/nanogallery.min.css" rel="stylesheet" type="text/css">
+<link href="plugins/blueimp_gallery/blueimp-gallery.min.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
 <!--[if lt IE 9]>
@@ -36,9 +36,9 @@
 <![endif]-->
 <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 <script src="plugins/sidr/jquery.sidr.min.js" type="text/javascript"></script>
-<script src="plugins/nanoGALLERY/jquery.nanogallery.min.js" type="text/javascript"></script>
+<script src="plugins/blueimp_gallery/blueimp-gallery.min.js" type="text/javascript"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
-<script src="js/nano_gallery_scripts.js" type="text/javascript"></script>
+<script src="js/blueimp_gallery_scripts.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
@@ -69,18 +69,49 @@
 		<section>
 			<h2>Pies</h2>
 
+			<!-- blueimp gallery image controls -->
+			<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+				<div class="slides"></div>
+				<h3 class="title"></h3>
+				<a class="prev">‹</a>
+				<a class="next">›</a>
+				<a class="close">×</a>
+				<a class="play-pause"></a>
+				<ol class="indicator"></ol>
+			</div>
+
 			<!-- Pie image gallery -->
-			<div id="nanoGallery">
-				<a href="images/pies/apple_pie.jpg" data-ngthumb="images/pies/apple_pie.jpg" data-ngdesc="A sweet, American favorite">Apple Pie</a>
-				<a href="images/pies/banana_cream_pie.jpg" data-ngthumb="images/pies/banana_cream_pie.jpg" data-ngdesc="A creamy pie topped with fresh bananas and whipped cream">Banana Cream Pie</a>
-				<a href="images/pies/berry_pie.jpg" data-ngthumb="images/pies/berry_pie.jpg" data-ngdesc="A star-studded pie filled with blueberries, raspberries, and cranberries">Berry Pie</a>
-				<a href="images/pies/cherry_pie.jpg" data-ngthumb="images/pies/cherry_pie.jpg" data-ngdesc="Pie filled with fresh cherries">Cherry Pie</a>
-				<a href="images/pies/french_silk_pie.jpg" data-ngthumb="images/pies/french_silk_pie.jpg" data-ngdesc="A smooth, chocolatey pie">French Silk Pie</a>
-				<a href="images/pies/fruit_cheese_pie.jpg" data-ngthumb="images/pies/fruit_cheese_pie.jpg" data-ngdesc="A cream cheese tart filled with fresh fruit">Fruit Cheese Pie</a>
-				<a href="images/pies/key_lime_pie.jpg" data-ngthumb="images/pies/key_lime_pie.jpg" data-ngdesc="Made with real Key limes from Florida">Key Lime Pie</a>
-				<a href="images/pies/lemon_meringue_pie.jpg" data-ngthumb="images/pies/lemon_meringue_pie.jpg" data-ngdesc="Pie filled with fresh lemons and topped with meringue">Lemon Meringue Pie</a>
-				<a href="images/pies/pecan_pie.jpg" data-ngthumb="images/pies/pecan_pie.jpg" data-ngdesc="A holiday favorite">Pecan Pie</a>
-				<a href="images/pies/pumpkin_pie.jpg" data-ngthumb="images/pies/pumpkin_pie.jpg" data-ngdesc="A Thanksgiving favorite">Pumpkin Pie</a>
+			<div id="links">
+				<a href="images/pies/apple_pie.jpg" title="Apple Pie">
+					<img src="images/pies/apple_pie.jpg" alt="Apple Pie">
+				</a>
+				<a href="images/pies/banana_cream_pie.jpg" title="Banana Cream Pie">
+					<img src="images/pies/banana_cream_pie.jpg" alt="Banana Cream Pie">
+				</a>
+				<a href="images/pies/berry_pie.jpg" title="Berry Pie">
+					<img src="images/pies/berry_pie.jpg" alt="Berry Pie">
+				</a>
+				<a href="images/pies/cherry_pie.jpg" title="Cherry Pie">
+					<img src="images/pies/cherry_pie.jpg" alt="Cherry Pie">
+				</a>
+				<a href="images/pies/french_silk_pie.jpg" title="French Silk Pie">
+					<img src="images/pies/french_silk_pie.jpg" alt="French Silk Pie">
+				</a>
+				<a href="images/pies/fruit_cheese_pie.jpg" title="Fruit Cheese Pie">
+					<img src="images/pies/fruit_cheese_pie.jpg" alt="Fruit Cheese Pie">
+				</a>
+				<a href="images/pies/key_lime_pie.jpg" title="Key Lime Pie">
+					<img src="images/pies/key_lime_pie.jpg" alt="Key Lime Pie">
+				</a>
+				<a href="images/pies/lemon_meringue_pie.jpg" title="Lemon Meringue Pie">
+					<img src="images/pies/lemon_meringue_pie.jpg" alt="Lemon Meringue Pie">
+				</a>
+				<a href="images/pies/pecan_pie.jpg" title="Pecan Pie">
+					<img src="images/pies/pecan_pie.jpg" alt="Pecan Pie">
+				</a>
+				<a href="images/pies/pumpkin_pie.jpg" title="Pumpkin Pie">
+					<img src="images/pies/pumpkin_pie.jpg" alt="Pumpkin Pie">
+				</a>
 			</div>
 		</section>
 	</div>

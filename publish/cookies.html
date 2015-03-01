@@ -28,7 +28,7 @@
 
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
 <link href="plugins/sidr/jquery.sidr.dark.css" rel="stylesheet" type="text/css">
-<link href="plugins/nanoGALLERY/css/nanogallery.min.css" rel="stylesheet" type="text/css">
+<link href="plugins/blueimp_gallery/blueimp-gallery.min.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 
 <!--[if lt IE 9]>
@@ -36,9 +36,9 @@
 <![endif]-->
 <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
 <script src="plugins/sidr/jquery.sidr.min.js" type="text/javascript"></script>
-<script src="plugins/nanoGALLERY/jquery.nanogallery.min.js" type="text/javascript"></script>
+<script src="plugins/blueimp_gallery/blueimp-gallery.min.js" type="text/javascript"></script>
 <script src="js/scripts.js" type="text/javascript"></script>
-<script src="js/nano_gallery_scripts.js" type="text/javascript"></script>
+<script src="js/blueimp_gallery_scripts.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
@@ -69,18 +69,49 @@
 		<section>
 			<h2>Cookies</h2>
 
+			<!-- blueimp gallery image controls -->
+			<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+				<div class="slides"></div>
+				<h3 class="title"></h3>
+				<a class="prev">‹</a>
+				<a class="next">›</a>
+				<a class="close">×</a>
+				<a class="play-pause"></a>
+				<ol class="indicator"></ol>
+			</div>
+
 			<!-- Cookie image gallery -->
-			<div id="nanoGallery">
-				<a href="images/cookies/chocolate_chip_cookies.jpg" data-ngthumb="images/cookies/chocolate_chip_cookies.jpg" data-ngdesc="Made fresh daily">Chocolate Chip Cookies</a>
-				<a href="images/cookies/chocolate_cookies.jpg" data-ngthumb="images/cookies/chocolate_cookies.jpg" data-ngdesc="Chocolate cookies with chocolate chips">Chocolate Cookies</a>
-				<a href="images/cookies/christmas_cookies.jpg" data-ngthumb="images/cookies/christmas_cookies.jpg" data-ngdesc="A cookie platter perfect for your holiday celebration">Christmas Cookies</a>
-				<a href="images/cookies/halloween_cookies.jpg" data-ngthumb="images/cookies/halloween_cookies.jpg" data-ngdesc="A spooky cookie platter for your trick-or-treaters">Halloween Cookies</a>
-				<a href="images/cookies/linzer_cookies.jpg" data-ngthumb="images/cookies/linzer_cookies.jpg" data-ngdesc="Sandwich cookies with a fruit center">Linzer Cookies</a>
-				<a href="images/cookies/macaroon_cookies.jpg" data-ngthumb="images/cookies/macaroon_cookies.jpg" data-ngdesc="Assorted flavors of the French favorite">Macaroons</a>
-				<a href="images/cookies/monster_cookies.jpg" data-ngthumb="images/cookies/monster_cookies.jpg" data-ngdesc="Cute blue monster cookies">Monster Cookies</a>
-				<a href="images/cookies/peanut_butter_cookies.jpg" data-ngthumb="images/cookies/peanut_butter_cookies.jpg" data-ngdesc="Packed with great peanut butter taste">Peanut Butter Cookies</a>
-				<a href="images/cookies/sandwich_cookies.jpg" data-ngthumb="images/cookies/sandwich_cookies.jpg" data-ngdesc="Chocolate chip cookies sandwiched together with vanilla icing and sprinkles">Sandwich Cookies</a>
-				<a href="images/cookies/snickerdoodle_cookies.jpg" data-ngthumb="images/cookies/snickerdoodle_cookies.jpg" data-ngdesc="A jBaquery favorite">Snickerdoodle Cookies</a>
+			<div id="links">
+				<a href="images/cookies/chocolate_chip_cookies.jpg" title="Chocolate Chip Cookies">
+					<img src="images/cookies/chocolate_chip_cookies.jpg" alt="Chocolate Chip Cookies">
+				</a>
+				<a href="images/cookies/chocolate_cookies.jpg" title="Chocolate Cookies">
+					<img src="images/cookies/chocolate_cookies.jpg" alt="Chocolate Cookies">
+				</a>
+				<a href="images/cookies/christmas_cookies.jpg" title="Christmas Cookies">
+					<img src="images/cookies/christmas_cookies.jpg" alt="Christmas Cookies">
+				</a>
+				<a href="images/cookies/halloween_cookies.jpg" title="Halloween Cookies">
+					<img src="images/cookies/halloween_cookies.jpg" alt="Halloween Cookies">
+				</a>
+				<a href="images/cookies/linzer_cookies.jpg" title="Linzer Cookies">
+					<img src="images/cookies/linzer_cookies.jpg" alt="Linzer Cookies">
+				</a>
+				<a href="images/cookies/macaroon_cookies.jpg" title="Macaroons">
+					<img src="images/cookies/macaroon_cookies.jpg" alt="Macaroons">
+				</a>
+				<a href="images/cookies/monster_cookies.jpg" title="Monster Cookies">
+					<img src="images/cookies/monster_cookies.jpg" alt="Monster Cookies">
+				</a>
+				<a href="images/cookies/peanut_butter_cookies.jpg" title="Peanut Butter Cookies">
+					<img src="images/cookies/peanut_butter_cookies.jpg" alt="Peanut Butter Cookies">
+				</a>
+				<a href="images/cookies/sandwich_cookies.jpg" title="Sandwich Cookies">
+					<img src="images/cookies/sandwich_cookies.jpg" alt="Sandwich Cookies">
+				</a>
+				<a href="images/cookies/snickerdoodle_cookies.jpg" title="Snickerdoodle Cookies">
+					<img src="images/cookies/snickerdoodle_cookies.jpg" alt="Snickerdoodle Cookies">
+				</a>
 			</div>
 		</section>
 	</div>
