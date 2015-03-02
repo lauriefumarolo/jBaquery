@@ -46,13 +46,13 @@ a::selection {
 	border-right: 1px solid rgba(255, 255, 255, 0.09);
 }
 
-#mainNav ul li {
+#mainNav li {
 	float: left;
 	border-left: 1px solid rgba(255, 255, 255, 0.09);
 	border-right: 1px solid rgba(0, 0, 0, 0.35);
 }
 
-#mainNav ul li a {
+#mainNav a {
 	display: block;
 	padding: 8px 12px;
 	color: #E6E6E6; /* Light gray */
@@ -60,7 +60,7 @@ a::selection {
 	text-decoration: none;
 }
 
-#mainNav ul li a:hover, #mobile-header a:hover {
+#mainNav a:hover, #mobile-header a:hover {
 	background-color: black;
 }
 
@@ -127,6 +127,8 @@ h2 {
 
 .fade img {
 	position: relative;
+	width: 700px;
+	height: 400px;
 	margin: auto;
 }
 
@@ -149,6 +151,11 @@ h2 {
 	display: none;
 }
 
+#mobile-content img {
+	width: 350px;
+	height: 250px;
+}
+
 /* Image gallery styles */
 
 #links {
@@ -160,7 +167,7 @@ h2 {
 	text-decoration: none;
 }
 
-#links a img {
+#links img {
 	height: 300px;
 }
 
@@ -180,8 +187,18 @@ h2 {
 	padding: 30px 20px;
 }
 
+.bakerCell img {
+	width: 200px;
+	height: 150px;
+}
+
 .vertical {
 	padding-left: 45px;
+}
+
+.vertical img {
+	width: 150px;
+	height: 200px;
 }
 
 .bakerName {
@@ -319,7 +336,7 @@ only screen and (max-device-width: 1024px) {
 	}
 
 	/* For image galleries, make images smaller */
-	#links a img {
+	#links img {
 		height: 225px;
 	}
 
