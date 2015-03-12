@@ -5,8 +5,8 @@ $(document).ready(function() {
 	// setup for jQuery UI dialog
 	$('#dialog').dialog({
 		autoOpen: false,
-		width: 400,
-		height: 250,
+		width: 300,
+		height: 220,
 		resizable: false,
 		modal: true,
 		buttons: {
