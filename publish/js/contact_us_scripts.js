@@ -6,7 +6,7 @@ $(document).ready(function() {
 	$('#dialog').dialog({
 		autoOpen: false,
 		width: 300,
-		height: 220,
+		height: 230,
 		resizable: false,
 		modal: true,
 		buttons: {
