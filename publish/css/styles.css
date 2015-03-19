@@ -315,8 +315,7 @@ footer a:hover {
 
 /* Media query */
 
-@media only screen and (max-width: 855px),
-only screen and (max-device-width: 1024px) {
+@media only screen and (max-width: 855px) {
 	/* Show mobile site navigation */
 	#mobile-header {
 		display: block;
