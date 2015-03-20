@@ -151,11 +151,11 @@ h2 {
 
 #mobile-content {
 	display: none;
+	text-align: center;
 }
 
 #mobile-content img {
-	width: 295px;
-	height: 195px;
+	width: 270px;
 }
 
 /* Image gallery styles */
@@ -191,7 +191,6 @@ h2 {
 
 .bakerCell img {
 	width: 200px;
-	height: 150px;
 }
 
 .vertical {
@@ -200,7 +199,6 @@ h2 {
 
 .vertical img {
 	width: 133px;
-	height: 200px;
 }
 
 .bakerName {
@@ -332,6 +330,19 @@ footer a:hover {
 		margin-right: auto;
 	}
 
+	/* Shrink content width */
+	.contentDiv {
+		width: 86%;
+	}
+
+	.contentDiv h2 {
+		text-align: center;
+	}
+
+	.contentDiv p {
+		text-align: center;
+	}
+
 	/* On home page, hide the carousel and show each image and description in their own separate section */
 
 	.fade {
@@ -361,6 +372,7 @@ footer a:hover {
 	.bakerCell {
 		display: block;
 		padding: 0;
+		text-align: center;
 	}
 
 	.vertical {
@@ -372,11 +384,13 @@ footer a:hover {
 
 	#contactInfo {
 		float: none;
+		margin-right: 0;
 	}
 
 	#map-canvas {
-		width: 295px;
-		height: 195px;
+		width: 270px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	/* "Please send us your questions and comments!" is more distinct */
@@ -384,5 +398,6 @@ footer a:hover {
 		background: #424242; /* Dark gray */
 		padding: 10px 10px 9px 10px;
 		color: #E6E6E6; /* Light gray */
+		text-align: center;
 	}
 }
