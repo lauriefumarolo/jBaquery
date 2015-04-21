@@ -290,6 +290,11 @@ footer {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45484D', endColorstr='#000000', GradientType=0); /* IE6-8 */
 }
 
+.edu_disclaimer {
+	color: red;
+	font-size: 13px;
+}
+
 footer a:link, footer a:visited {
 	color: #777; /* Gray */
 	text-decoration: none;
