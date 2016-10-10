@@ -1,3 +1,24 @@
+// Google Maps
+var map;
+function initMap() {
+	// get map point with latitude and longitude
+	var mapPoint = new google.maps.LatLng(41.8838972, -87.628465);
+
+	// create map and show in #map-canvas
+	var map = new google.maps.Map(document.getElementById('map-canvas'), {
+		center: mapPoint,
+		zoom: 17,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+
+	// create marker that shows bakery address
+	var marker = new google.maps.Marker({
+		position: mapPoint,
+		map: map,
+		title: "jBaquery"
+	});
+}
+
 $(document).ready(function() {
 	// setup for jQuery UI button
 	$('input[type="submit"]').button();
@@ -56,27 +77,4 @@ $(document).ready(function() {
 			return false;
 		}
 	}); // end setup for jquery validation plugin
-
-	// helper function that initializes Google map of bakery location
-	function initializeMap() {
-		// get map point with latitude and longitude
-		var mapPoint = new google.maps.LatLng(41.8838972, -87.628465);
-
-		// create map and show in #map-canvas
-		var map = new google.maps.Map(document.getElementById('map-canvas'), {
-			center: mapPoint,
-			zoom: 17,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		});
-
-		// create marker that shows bakery address
-		var marker = new google.maps.Marker({
-			position: mapPoint,
-			map: map,
-			title: "jBaquery"
-		});
-	}
-
-	// initialize map
-	google.maps.event.addDomListener(window, 'load', initializeMap);
 }); // end document.ready()
